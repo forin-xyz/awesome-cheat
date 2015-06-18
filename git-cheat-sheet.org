@@ -1,0 +1,7 @@
+#+TITLE:     git cheat sheet
+#+AUTHOR:    forin.xyz
+#+EMAIL:     0000@whu.edu.cn
+#+DATE:      2015-06-18 四
+#+DESCRIPTION: git十分钟快速指南
+#+KEYWORDS:  git:github
+#+LANGUAGE:  zh
