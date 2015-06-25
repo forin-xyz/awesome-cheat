@@ -1,0 +1,58 @@
+** django安装
+
+*** 获得django版本
+#+BEGIN_SRC shell -t
+python -c "import django; print(django.get_version())"
+#+END_SRC
+#+BEGIN_SRC
+
+#+END_SRC
+** django命令行操作
+
+*** 创建一个项目
+#+BEGIN_SRC shell -t
+django-admin startproject mysite
+#+END_SRC
+
+*** 数据迁移
+#+BEGIN_SRC shell
+python manage.py migrate
+#+END_SRC
+
+*** 项目部署
+#+BEGIN_SRC shell
+python manage.py runserver 0.0.0.0:8000
+#+END_SRC
+如果不输入IP地址和端口号, 默认的IP地址为0.0.0.0, 端口号为 8000
+
+*** 创建应用
+#+BEGIN_SRC shell
+python manage.py startapp polls
+#+END_SRC
+
+*** 启动命令行REPL
+#+BEGIN_SRC
+python manage.py shell
+#+END_SRC
+
+*** 模型数据库迁移
+#+BEGIN_SRC shell
+python manage.py makemigrations $app
+#+END_SRC
+
+*** 查看SQL语句
+#+BEGIN_SRC shell
+python manage.py sqlmigrate $app $index
+#+END_SRC
+#+BEGIN_EXAMPLE
+python manage.py sqlmigrate polls 0001
+#+END_EXAMPLE
+** 模型
+#+BEGIN_SRC python file=polls/models.py
+from django.db import models
+
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField('date published')
+#+END_SRC
