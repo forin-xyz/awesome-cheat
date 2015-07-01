@@ -1,0 +1,92 @@
+#+TITLE: 15分钟学会emacs-org-mode
+
+<<target>>
+* 简单操作
+
+** 标题
+
+*** 总标题
+
+#+BEGIN_EXAMPLE
+   #+TITLE: 15分钟学会emacs-org-mode
+#+END_EXAMPLE
+
+*** 小标题
+
+#+BEGIN_EXAMPLE
+* 简单操作
+** 标题
+*** 总标题
+#+END_EXAMPLE
+总共可以设置到十级标题
+
+** 段落
+回车一次表示一个空格,回车两次才表示开始一个新的段落.连输输入两个\\表示一个空格.
+
+#+BEGIN_EXAMPLE
+段落一
+
+段落二\\
+段落三
+#+END_EXAMPLE
+
+效果如下:
+
+#+BEGIN_QUOTE
+段落一
+
+段落二\\
+段落三
+#+END_QUOTE
+
+** 字体
+
+*粗体*
+#+BEGIN_EXAMPLE
+*粗体*
+#+END_EXAMPLE
+/斜体/
+#+BEGIN_EXAMPLE
+/斜体/
+#+END_EXAMPLE
++删除线+
+#+BEGIN_EXAMPLE
++删除线+
+#+END_EXAMPLE
+_下划线_
+#+BEGIN_EXAMPLE
+_下划线_
+#+END_EXAMPLE
+_下标\\\\  H_2{O}
+#+BEGIN_EXAMPLE
+_下标  H_2{O}
+#+END_EXAMPLE
+_上标\\\\  E=mc^2
+#+BEGIN_EXAMPLE
+_上标  E=mc^2
+#+END_EXAMPLE
+=等宽字=
+#+BEGIN_EXAMPLE
+=等宽字=
+#+END_EXAMPLE
+
+** 连接
+** [[外部链接]]
+#+BEGIN_EXAMPLE
+[[link]]
+[[link][link_description]]
+#+END_EXAMPLE
+[[http://www.baidu.com]]
+[[http://www.baidu.com][百度]]
+** 内部连接
+#+BEGIN_EXAMPLE
+#<<target>>
+* 简单操作
+[[target]]
+[[target][回到简单操作]]
+#+END_EXAMPLE
+[[target]]
+[[target][回到简单操作]]
+
+* 参考文献
+[[http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html][神器中的神器org-mode之入门篇]]
