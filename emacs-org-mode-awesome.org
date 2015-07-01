@@ -21,23 +21,29 @@
 总共可以设置到十级标题
 
 ** 段落
-回车一次表示一个空格,回车两次才表示开始一个新的段落.连输输入两个\\\ 表示一个空格.
+回车一次表示一个空格,回车两次才表示开始一个新的段落.连输输入两个\\\表示一个空格.
 
 #+BEGIN_EXAMPLE
 段落一
 
-段\ 落\ 二
+段\ 落\ 二\\
 段落三
 #+END_EXAMPLE
 
 效果如下:
 
-#+BEGIN_QUOTE
 段落一
 
-段\ 落\ 二
+段\ 落\ 二\\
 段落三
-#+END_QUOTE
+
+*** 分割线 -----
+五条或以上短线显示为分割线
+
+#+BEGIN_EXAMPLE
+-----
+#+END_EXAMPLE
+
 
 ** 字体
 
@@ -57,11 +63,11 @@ _下划线_
 #+BEGIN_EXAMPLE
 _下划线_
 #+END_EXAMPLE
-_下标\ \ H_2{O}
+_下标 H_2{O}
 #+BEGIN_EXAMPLE
 _下标  H_2{O}
 #+END_EXAMPLE
-_上标\ \ E=mc^2
+_上标 E=mc^2
 #+BEGIN_EXAMPLE
 _上标  E=mc^2
 #+END_EXAMPLE
@@ -70,18 +76,67 @@ _上标  E=mc^2
 =等宽字=
 #+END_EXAMPLE
 
+** 列表 list
+
+** 嵌入内容
+
+*** 源代码 s
+
+快捷方式: 输入一个<s然后按TAB后就会展开
+#+BEGIN_EXAMPLE
+#+BEGIN_SRC
+
+#+END_SRC
+#+END_EXAMPLE
+其他类同
+
+*** 示例 e
+
+*** 引用 q
+
+*** 诗歌 v
+
+*** latex, 数学公式 l, L
+
+*** html, 网页文件 h, H
+
+** 表格
+
+#+CAPTION: 表格的标题
+
+
 ** 连接
 
-** [[外部链接]]
+
+*** 自动链接
+互联网
+
+http://www.baidu.com
+https://www.google.com
+
+文件
+file:/home/dominik/images/jupiter.jpg
+
+新闻组
+news:comp.emacs
+
+邮件
+mailto:554303617@qq.com
+
+
+*** [[外部链接]]
 #+BEGIN_EXAMPLE
 [[link]]
 [[link][link_description]]
 #+END_EXAMPLE
 [[http://www.baidu.com]]
 
+
 [[http://www.baidu.com][百度]]
 
-** 内部连接
+*** 标签tag
+
+*** 内部连接
 
 #+BEGIN_EXAMPLE
 #<<target>>
@@ -98,3 +153,5 @@ _上标  E=mc^2
 * 参考文献
 
 [[http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html][神器中的神器org-mode之入门篇]]
+
+[[http://orgmode.org/orgcard.txt][Org-Mode参考卡]]
