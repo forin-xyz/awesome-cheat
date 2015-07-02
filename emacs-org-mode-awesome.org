@@ -120,8 +120,8 @@ file:/home/dominik/images/jupiter.jpg
 新闻组
 news:comp.emacs
 
-邮件
-mailto:554303617@qq.com
+邮件\\
+[[mailto:554303617@qq.com]]
 
 
 *** [[外部链接]]
@@ -139,7 +139,7 @@ mailto:554303617@qq.com
 *** 内部连接
 
 #+BEGIN_EXAMPLE
-#<<target>>
+    #<<target>>
 * 简单操作
 [[target]]
 
