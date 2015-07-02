@@ -21,7 +21,8 @@
 总共可以设置到十级标题
 
 ** 段落
-回车一次表示一个空格,回车两次才表示开始一个新的段落.连输输入两个\\\表示一个空格.
+   回车一次表示一个空格,回车两次才表示开始一个新的段落.\\
+   在行尾输入一个\\\表示在段落中插入一个换行符即新行.
 
 #+BEGIN_EXAMPLE
 段落一
@@ -107,46 +108,62 @@ _上标  E=mc^2
 
 ** 连接
 
-
-*** 自动链接
-互联网
-
-http://www.baidu.com
-https://www.google.com
-
-文件
-file:/home/dominik/images/jupiter.jpg
-
-新闻组
-news:comp.emacs
-
-邮件\\
-[[mailto:554303617@qq.com]]
-
-
-*** [[外部链接]]
 #+BEGIN_EXAMPLE
 [[link]]
 [[link][link_description]]
+
+http超链接
+[[https://news.ycombinator.com][hacknews]]
+
+邮箱
+[[mailto:example@host.xx][邮箱]]
+
+新闻组
+[[news:comp.emacs][新闻组]]
+
+文件
+[[file:/home/path/to/file][文件]]
+
+图片
+[[file:image/csdn.jpg]]
+
+带图片的连接
+[[http://www.csdn.net][file:image/csdn.jpg]]
 #+END_EXAMPLE
-[[http://www.baidu.com]]
+
+http超链接
+[[https://news.ycombinator.com][hacknews]]
+
+邮箱
+[[mailto:example@host.xx][邮箱]]
+
+新闻组
+[[news:comp.emacs][新闻组]]
+
+文件
+[[file:/home/path/to/file][文件]]
+
+图片
+[[file:image/csdn.jpg]]
+
+带图片的连接
+[[http://www.csdn.net][file:image/csdn.jpg]]
 
 
-[[http://www.baidu.com][百度]]
+
 
 *** 标签tag
 
 *** 内部连接
 
 #+BEGIN_EXAMPLE
-    #<<target>>
-* 简单操作
-[[target]]
-
-[[target][回到简单操作]]
+   #<<target>>
+   * 简单操作
+   [[target]]
+   [[target][回到简单操作]]
 #+END_EXAMPLE
 
-[[target]]
+    [[target]]
 
 [[target][回到简单操作]]
 
@@ -155,3 +172,5 @@ news:comp.emacs
 [[http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html][神器中的神器org-mode之入门篇]]
 
 [[http://orgmode.org/orgcard.txt][Org-Mode参考卡]]
+
+[[http://www.worldhello.net/gotgithub/appendix/markups.html][轻量级标记语言]]
