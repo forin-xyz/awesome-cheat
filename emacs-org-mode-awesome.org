@@ -85,61 +85,63 @@ _上标  E=mc^2
 
 快捷方式: 输入一个<s然后按TAB后就会展开
 #+BEGIN_EXAMPLE
-   #+BEGIN_SRC
+  ,#+BEGIN_SRC
 
-   #+END_SRC
+  ,#+END_SRC
 #+END_EXAMPLE
 其他类同
 
 *** 示例 e
 #+BEGIN_EXAMPLE
-   #+BEGIN_EXAMPLE
+   ,#+BEGIN_EXAMPLE
    This is a example!
-   #+END_EXAMPLE
+   ,#+END_EXAMPLE
 
 #+END_EXAMPLE
 *** 引用 q
 #+BEGIN_EXAMPLE
 法国数学家庞加莱说过:
-#+BEGIN_QUOTE
+,#+BEGIN_QUOTE
 若想预见数学的将来, 正确的方法是研究它的历史和现状.
 #+END_QUOTE
-#+END_EXAMPLE
+,#+END_EXAMPLE
 *** 诗歌 v
 #+BEGIN_EXAMPLE
-#+BEGIN_QUOTE
-静夜思 李白
-床前明月光,疑是地上霜.
-举头望明月,低头思故乡.
-#+END_QUOTE
+    ,#+BEGIN_VERSE
+        静夜思 李白
+
+    床前明月光,疑是地上霜.
+    举头望明月,低头思故乡.
+
+    ,#+END_VERSE
 #+END_EXAMPLE
 *** latex, 数学公式 l, L
 #+BEGIN_EXAMPLE
 行间公式 <l TAB
-#+BEGIN_LaTeX
+,#+BEGIN_LaTeX
 \[
 \begin{split}
 a^2 - b^2 &= (a + b)(a - b)
 (a + b)^2 &= a^2 +2ab + b^2
 \end{split}
-#+END_LaTeX
+,#+END_LaTeX
 
 单行公式 <L TAB
-#+LaTeX: $a^2 + b^2 = c^2$
+,#+LaTeX: $a^2 + b^2 = c^2$
 #+END_EXAMPLE
 *** html, 网页文件 h, H
 #+BEGIN_EXAMPLE
 多行HTML <h TAB
-#+BEGIN_HTML
+,#+BEGIN_HTML
 <div>
     <p>hello</p>
     <p>I'm a awesome cheat of Emacs org-mode.</p>
 </div>
 </div>
-#+END_HTML
+,#+END_HTML
 
 单行HTML <H TAB
-#+HTML: <p>H<sub>2</sub>O</p>
+,#+HTML: <p>H<sub>2</sub>O</p>
 #+END_EXAMPLE
 
 ** 表格
