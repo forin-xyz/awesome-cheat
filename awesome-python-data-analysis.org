@@ -30,7 +30,10 @@ import pandas as pd
 #+END_SRC
 
 *** 详细介绍
-
+[[file:awesome-numpy.org][numpy]]
+[[file:awesome-matplotlib.org][matplotlib]]
+[[awesome-scipy.org][scipy]]
+[[file:awesome-pandas.org][pandas]]
 ** 数据库
 
 *** mongodb 文档化数据库
@@ -38,4 +41,4 @@ pymongo
 mongoengine
 
 ** 机器学习
-scikit-learn
+[[file:awesome-scikit-learn.org][scikit-learn]]
