@@ -1,0 +1,23 @@
+#+TITLE:     emacs-lisp 快速指南
+#+AUTHOR:    Cheng Rui
+#+EMAIL:     0000@whu.edu.cn
+#+DATE:      2015-07-08 三
+#+DESCRIPTION:
+#+KEYWORDS: elisp
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+
+** 常用命令和函数
+
+1. (erase-buffer)
+   清空当前buffer的所有内容
+
+** 常用变量
+
+1. user-emacs-directory  默认值为:~/.emacs.d, 用户配置文件目录
+2. load-file-name        加载的文件名，相对路径或者绝对路径

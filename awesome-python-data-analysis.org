@@ -1,0 +1,41 @@
+#+TITLE:     python 数据分析
+#+AUTHOR:    Cheng Rui
+#+EMAIL:     blackzero@ubuntu
+#+DATE:      2015-07-08 三
+#+DESCRIPTION:
+#+KEYWORDS:  python data analysis
+#+LANGUAGE:  cn
+
+** 常用第三库
+
+*** 安装
+#+BEGIN_SRC shell
+sudo apt-get install python-numpy
+sudo apt-get install python-scipy
+sudo apt-get install python-matplotlib
+sudo apt-get install python-pandas
+#+END_SRC
+
+*** 说明
+#+BEGIN_SRC python3
+# 数组，矩阵等数值计算的C实现
+import numpy as np
+# 科学计算包, numpy升级版
+import scipy as sp
+# 图形工具，可视化利器
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+# 数据分析，结构化数据工具
+import pandas as pd
+#+END_SRC
+
+*** 详细介绍
+
+** 数据库
+
+*** mongodb 文档化数据库
+pymongo
+mongoengine
+
+** 机器学习
+scikit-learn
