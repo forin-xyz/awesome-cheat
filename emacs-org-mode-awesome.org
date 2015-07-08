@@ -1,4 +1,11 @@
-#+TITLE: 15分钟学会emacs-org-mode
+#+TITLE:     15分钟学会emacs-org-mode
+#+AUTHOR:    forin.xyz
+#+EMAIL:     0000@whu.edu.cn
+#+DATE:      2015-07-03 五
+#+DESCRIPTION:
+#+KEYWORDS:  emacs org-mode 标记语言
+#+LANGUAGE:  中文
+#+OPTIONS:   H:6 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 
 #<<target>>
 * 简单操作
@@ -14,9 +21,9 @@
 *** 小标题
 
 #+BEGIN_EXAMPLE
-* 简单操作
-** 标题
-*** 总标题
+,* 简单操作
+,** 标题
+,*** 总标题
 #+END_EXAMPLE
 总共可以设置到十级标题
 
@@ -146,7 +153,52 @@ a^2 - b^2 &= (a + b)(a - b)
 
 ** 表格
 
-#+CAPTION: 表格的标题
+#+BEGIN_EXAMPLE
+,#+CAPTION: 表格的快捷键
+| 操作     | 说明                          |
+|----------+-------------------------------|
+| C-c 竖线 | 创建或转化成表格              |
+| C-c C-c  | 调整表格                      |
+| S-TAB    | 移动到上一表格                |
+| TAB      | 移动到下一表格,必要时新建一行 |
+|----------+-------------------------------|
+| C-c -    | 添加水平分割线                |
+| C-c ^    | 根据当前列排序,可以选择排列方式 |
+#+END_EXAMPLE
+
+#+CAPTION: 表格的快捷键
+  | 操作     | 说明                            |
+  |----------+---------------------------------|
+  | C-c 竖线 | 创建或转化成表格                |
+  | C-c C-c  | 调整表格                        |
+  | S-TAB    | 移动到上一表格                  |
+  | TAB      | 移动到下一表格,必要时新建一行   |
+  |----------+---------------------------------|
+  | C-c -    | 添加水平分割线                  |
+  | C-c ^    | 根据当前列排序,可以选择排列方式 |
+
+** 文档元数据
+
+快捷键: C-c C-e t
+#+BEGIN_EXAMPLE
+
+,#+TITLE:     文档标题
+,#+AUTHOR:    作者
+,#+EMAIL:     邮箱
+,#+DATE:      日期
+,#+DESCRIPTION: 文档描述
+,#+KEYWORDS:  关键字, 标签
+,#+LANGUAGE:  语言
+,#+OPTIONS:   H:6 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+,#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+,#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+,#+EXPORT_SELECT_TAGS: export
+,#+EXPORT_EXCLUDE_TAGS: noexport
+,#+LINK_UP: 上级链接
+,#+LINK_HOME:
+,#+XSLT:
+
+#+END_EXAMPLE
 
 
 ** 连接
@@ -193,10 +245,6 @@ http超链接
 [[http://www.csdn.net][file:image/csdn.jpg]]
 
 
-
-
-*** 标签tag
-
 *** 内部连接
 
 #+BEGIN_EXAMPLE
@@ -210,6 +258,16 @@ http超链接
 
 [[target][回到简单操作]]
 
+
+*** 注脚
+快捷键: C-c C-x f
+home[fn:home]
+文章末尾
+#+BEGIN_Footnotes
+,* EXAMPLE
+[fn:1] The link is: http://orgmode.org
+[fn:orghone] The link is: [[http://orgmode.org]]
+#+END_EXAMPLE
 * 参考文献
 
 [[http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html][神器中的神器org-mode之入门篇]]
@@ -217,3 +275,7 @@ http超链接
 [[http://orgmode.org/orgcard.txt][Org-Mode参考卡]]
 
 [[http://www.worldhello.net/gotgithub/appendix/markups.html][轻量级标记语言]]
+
+* Footnotes
+
+[fn:home] The link is: [[http://orgmode.org]]
